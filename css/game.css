@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(to right, #ffb76b 0%,#ffa73d 32%,#ff7c00 69%,#ff7f04 100%);
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+    
+}
+.block__container{
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 900px;
+    box-shadow: 10px 5px 10px  #1E212C;
+}
+.game-start{
+    max-width: 100px;
+    min-height: 45px;
+    /* margin-top: 10px; */
+	padding: 12px;
+    text-align: center;
+    background-color: blue;
+    color: wheat;
+	display: inline-block;
+	border-radius: 5px;
+}
+/* ========================================================================================== */
+.gameline{
+	margin: -35px;
+	margin-left: 70px;
+	max-width: 700px;
+	min-height: 30px;
+	visibility: hidden;
+	 /* border: 1px solid black; */
+}
+.game-start:hover + .gameline,
+.gameline:hover{
+	visibility: visible;
+}
+.gameline:hover {
+	background: rgb(0, 5, 70);
+	background: linear-gradient(90deg, rgba(0, 5, 70, 1) 0%, rgba(0, 5, 246, 1) 100%);
+	
+}
+/* ========================================================================================== */
+.gameline-1 {
+	max-width: 20px;
+	min-height: 400px;
+	margin-left: 750px;
+	margin-top: 27px;
+	visibility: hidden;
+	/* border: 1px solid black; */
+}
+.gameline-1:hover {
+	background-color: #ff7c00;
+}
+.gameline:hover + .gameline-1,
+.gameline-1:hover{
+	visibility: visible;
+}
+/* ========================================================================================== */
+.gameline-2 {
+	/* border: 1px solid black; */
+	max-width: 285px;
+	min-height: 20px;
+	margin-left: 485px;
+	margin-top: -4px;
+	visibility: hidden;
+}
+.gameline-2:hover {
+	background-color: greenyellow;
+}
+.gameline-1:hover + .gameline-2,
+.gameline-2:hover{
+	visibility: visible;
+}
+
+/* ========================================================================================== */
+
+.gameline-3 {
+	/* border: 1px solid black; */
+	max-width: 20px;
+	min-height: 300px;
+	margin-top: -5px;
+	margin-left: 485px;
+	visibility: hidden;
+}
+.gameline-3:hover{
+	background-color: rgb(240, 145, 68);
+}
+.gameline-2:hover + .gameline-3,
+.gameline-3:hover{
+	visibility: visible;
+}
+
+/* ========================================================================================== */
+
+.gameline-4 {
+	/* border: 1px solid black; */
+	max-width: 270px;
+	height: 12px;
+	margin-left: 235px;
+	margin-top: -10px;
+	visibility: hidden;
+}
+.gameline-4:hover{
+	background-color: rgb(230, 41, 41);
+}
+.gameline-3:hover + .gameline-4,
+.gameline-4:hover{
+	visibility: visible;
+}
+
+
+/* ========================================================================================== */
+
+
+.gameline-5 {
+	background: url('../img/finish.jpg') 0 0 /100px 100px no-repeat;
+	min-width: 100px;
+	min-height: 100px;
+	margin-top: -10px;
+	margin-left: 135px;
+	display: inline-block;
+	visibility: hidden;
+}
+.gameline-5:hover {
+
+}
+.gameline-4:hover + .gameline-5,
+.gameline-5:hover{
+	visibility: visible;
+}
